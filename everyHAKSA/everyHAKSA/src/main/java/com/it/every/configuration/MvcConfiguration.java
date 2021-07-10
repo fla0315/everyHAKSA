@@ -20,8 +20,8 @@ public class MvcConfiguration implements WebMvcConfigurer{
 		
 		/*
 		registry.addInterceptor(new AdminLoginInterceptor())
-		.excludePathPatterns("/admin/login/adminLogin") //ì œì™¸í• êº¼ ì´ê±° ì•ˆë„£ìœ¼ë©´ ê³„ì† ì‚¥ì‚¥ëˆë‹¤
-		.addPathPatterns("/admin/**"); //ì¶”ê°€í•  ë‚´ìš© **ì„ í†µí•´ì„œ ë‹¤ ë„£ëŠ”ë‹¤
+		.excludePathPatterns("/admin/login/adminLogin") //Á¦¿ÜÇÒ²¨ ÀÌ°Å ¾È³ÖÀ¸¸é °è¼Ó »æ»æµ·´Ù
+		.addPathPatterns("/admin/**"); //Ãß°¡ÇÒ ³»¿ë **À» ÅëÇØ¼­ ´Ù ³Ö´Â´Ù
 		*/
 	}
 
@@ -29,8 +29,8 @@ public class MvcConfiguration implements WebMvcConfigurer{
 	public CommonsMultipartResolver multipartResolver() {
 		CommonsMultipartResolver multipartResolver 
 			= new CommonsMultipartResolver();
-		multipartResolver.setDefaultEncoding("UTF-8"); // íŒŒì¼ ì¸ì½”ë”© ì„¤ì •
-		multipartResolver.setMaxUploadSizePerFile(2 * 1024 * 1024); // íŒŒì¼ë‹¹ ì—…ë¡œë“œ í¬ê¸° ì œí•œ (5MB)
+		multipartResolver.setDefaultEncoding("UTF-8"); // ÆÄÀÏ ÀÎÄÚµù ¼³Á¤
+		multipartResolver.setMaxUploadSizePerFile(2 * 1024 * 1024); // ÆÄÀÏ´ç ¾÷·Îµå Å©±â Á¦ÇÑ (5MB)
 		
 		
 		return multipartResolver;

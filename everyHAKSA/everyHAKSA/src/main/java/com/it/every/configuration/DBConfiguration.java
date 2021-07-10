@@ -1,6 +1,7 @@
 package com.it.every.configuration;
 
 import javax.sql.DataSource;
+
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -41,7 +42,7 @@ public class DBConfiguration {
 		SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
 		factoryBean.setDataSource(dataSource());
 		factoryBean.setMapperLocations(applicationContext.getResources("classpath:/config/mybatis/mapper/oracle/*.xml"));
-		factoryBean.setTypeAliasesPackage("com.it.herb");
+		factoryBean.setTypeAliasesPackage("com.it.every");
 		factoryBean.setConfiguration(mybatisConfg());
 		return factoryBean.getObject();
 	}
@@ -57,7 +58,7 @@ public class DBConfiguration {
 		return new org.apache.ibatis.session.Configuration();
 	}
 
-	//tx:annotation-driven ì„¤ì •-@Transactionalë¥¼ ì„ ì–¸í•˜ì—¬ íŠ¸ëžœìž­ì…˜ ì²˜ë¦¬ë¥¼ í•  ìˆ˜ ìžˆë‹¤.
+	//tx:annotation-driven ¼³Á¤-@Transactional¸¦ ¼±¾ðÇÏ¿© Æ®·£Àè¼Ç Ã³¸®¸¦ ÇÒ ¼ö ÀÖ´Ù.
 	@Bean
 	public PlatformTransactionManager txManager() throws Exception{
 		return new DataSourceTransactionManager(dataSource());
