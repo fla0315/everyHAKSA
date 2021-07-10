@@ -1,5 +1,0 @@
-INDEX VERSION 1.4+C:\Users\fla03\OneDrive\¹®¼­\GitHub\everyHAKSA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3393673079.index
-1819832838.index
-2828447734.index
-1607380072.index
