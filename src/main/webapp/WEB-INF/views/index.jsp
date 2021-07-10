@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="inc/top.jsp" %>
 
@@ -16,4 +16,4 @@
 	<%@ include file="shop/product/productCatalog.jsp" %>
 </article>
 	
-<%@ include file="inc/bottom.jsp" %>
+<%@ include file="inc/bottom.jsp" %> --%>
